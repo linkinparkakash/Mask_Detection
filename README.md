@@ -8,11 +8,11 @@ Clone the repository to your local machine.
 
 Install the required dependencies by running the following command:
 
-Copy code
+Use code -->
 pip install -r requirements.txt
 Run the Flask app by running the following command:
 
-Copy code
+Use code -->
 python app.py or main.py
 Open a web browser and go to http://localhost:5000 to access the app.
 
