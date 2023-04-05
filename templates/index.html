@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mask Detection</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+      }
+      h1, h2 {
+        text-align: center;
+        margin-top: 40px;
+      }
+      form {
+        margin: 40px auto;
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin-bottom: 20px;
+      }
+      input[type="file"] {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 60%;
+        max-width: 400px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        display: block;
+        margin: 20px auto 40px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #4caf50;
+        cursor: pointer;
+      }
+      img {
+        display: block;
+        margin: 40px auto;
+        max-width: 80%;
+        max-height: 400px;
+        box-shadow: 0px 0px 10px #ccc;
+      }
+      .linkedin {
+        text-align: center;
+        margin-top: 40px;
+      }
+      .linkedin a {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .linkedin img {
+        height: 40px;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mask Detection</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+      <label for="image">Select an image:</label>
+      <input type="file" id="image" name="image">
+      <br><br>
+      <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+      <h2>Prediction Results:</h2>
+      <img src="{{ prediction }}">
+    {% endif %}
+
+    <div class="linkedin">
+      <a href="https://www.linkedin.com/in/akash-pathania-114924112/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+      </a>
+    </div>
+  </body>
+</html>
