@@ -10,10 +10,12 @@ Install the required dependencies by running the following command:
 
 Use code -->
 pip install -r requirements.txt
+
 Run the Flask app by running the following command:
 
 Use code -->
 python app.py or main.py
+
 Open a web browser and go to http://localhost:5000 to access the app.
 
 # Usage
@@ -29,6 +31,11 @@ The app will display the input image with bounding boxes around the detected obj
 
 # Credits
 This project was created by Akash Pathania as part of a iNeuron.ai Internship project. The YOLOv5 algorithm was developed by Ultralytics LLC. The Flask web application was created using the Flask framework.
+
+# Deployed on AWS
+
+http://maskdetection-env.eba-pjg65bfe.ap-northeast-1.elasticbeanstalk.com/
+(App may not work sometimes due to several reasons on AWS)
 
 
 
